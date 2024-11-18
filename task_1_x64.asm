@@ -40,6 +40,8 @@ add r12, 1
 jmp start_in
 end_in:
 
+; bbsort start
+
 mov rbx, 0
 bbsort_start:
     mov r9, [rbp - 8]
@@ -68,6 +70,7 @@ iter_bbsort_end:
     inc rbx
     jmp bbsort_start
 bbsort_end:
+
 ;bb_sort_end
 
 mov r12, 0
