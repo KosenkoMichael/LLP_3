@@ -22,7 +22,11 @@ endif()
 add_library(medium_h SHARED "include/medium.h" ".cc/medium.cc")
 target_include_directories(medium_h PUBLIC "include")
 
+add_library(hard_h SHARED "include/hard.h" ".cc/hard.cc")
+target_include_directories(hard_h PUBLIC "include")
+
 add_executable(medium ".cc/medium.cc")
 add_executable(hard ".cc/hard.cc")
 
 target_link_libraries(medium PUBLIC medium_h)
+target_link_libraries(hard PUBLIC hard_h)
