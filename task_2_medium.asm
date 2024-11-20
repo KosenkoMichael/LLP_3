@@ -19,7 +19,6 @@ mov byte[r8+10], 00h ; SUUU
 mov r9, [r8+8]
 mov [rsp+40], r9
 
-mov ecx, 1
 mov rdx, 0
 
 call access9
